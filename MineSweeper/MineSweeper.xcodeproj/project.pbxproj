@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE4B338618FA16C2005097D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B338518FA16C2005097D3 /* Cocoa.framework */; };
+		AE4B339018FA16C2005097D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4B338E18FA16C2005097D3 /* InfoPlist.strings */; };
+		AE4B339218FA16C2005097D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B339118FA16C2005097D3 /* main.m */; };
+		AE4B339618FA16C2005097D3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AE4B339418FA16C2005097D3 /* Credits.rtf */; };
+		AE4B339918FA16C2005097D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B339818FA16C2005097D3 /* AppDelegate.m */; };
+		AE4B339C18FA16C2005097D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4B339A18FA16C2005097D3 /* MainMenu.xib */; };
+		AE4B339E18FA16C2005097D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4B339D18FA16C2005097D3 /* Images.xcassets */; };
+		AE4B33A518FA16C3005097D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B33A418FA16C3005097D3 /* XCTest.framework */; };
+		AE4B33A618FA16C3005097D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B338518FA16C2005097D3 /* Cocoa.framework */; };
+		AE4B33AE18FA16C3005097D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4B33AC18FA16C3005097D3 /* InfoPlist.strings */; };
+		AE4B33B018FA16C3005097D3 /* MineSweeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33AF18FA16C3005097D3 /* MineSweeperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE4B33A718FA16C3005097D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4B337A18FA16C2005097D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4B338118FA16C2005097D3;
+			remoteInfo = MineSweeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE4B338218FA16C2005097D3 /* MineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4B338518FA16C2005097D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AE4B338818FA16C2005097D3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AE4B338918FA16C2005097D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AE4B338A18FA16C2005097D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE4B338D18FA16C2005097D3 /* MineSweeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MineSweeper-Info.plist"; sourceTree = "<group>"; };
+		AE4B338F18FA16C2005097D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE4B339118FA16C2005097D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE4B339318FA16C2005097D3 /* MineSweeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MineSweeper-Prefix.pch"; sourceTree = "<group>"; };
+		AE4B339518FA16C2005097D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AE4B339718FA16C2005097D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE4B339818FA16C2005097D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE4B339B18FA16C2005097D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AE4B339D18FA16C2005097D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE4B33A318FA16C3005097D3 /* MineSweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineSweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4B33A418FA16C3005097D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AE4B33AB18FA16C3005097D3 /* MineSweeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MineSweeperTests-Info.plist"; sourceTree = "<group>"; };
+		AE4B33AD18FA16C3005097D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE4B33AF18FA16C3005097D3 /* MineSweeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineSweeperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4B337F18FA16C2005097D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B338618FA16C2005097D3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B33A018FA16C3005097D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B33A618FA16C3005097D3 /* Cocoa.framework in Frameworks */,
+				AE4B33A518FA16C3005097D3 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4B337918FA16C2005097D3 = {
+			isa = PBXGroup;
+			children = (
+				AE4B338B18FA16C2005097D3 /* MineSweeper */,
+				AE4B33A918FA16C3005097D3 /* MineSweeperTests */,
+				AE4B338418FA16C2005097D3 /* Frameworks */,
+				AE4B338318FA16C2005097D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4B338318FA16C2005097D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B338218FA16C2005097D3 /* MineSweeper.app */,
+				AE4B33A318FA16C3005097D3 /* MineSweeperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4B338418FA16C2005097D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B338518FA16C2005097D3 /* Cocoa.framework */,
+				AE4B33A418FA16C3005097D3 /* XCTest.framework */,
+				AE4B338718FA16C2005097D3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4B338718FA16C2005097D3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B338818FA16C2005097D3 /* AppKit.framework */,
+				AE4B338918FA16C2005097D3 /* CoreData.framework */,
+				AE4B338A18FA16C2005097D3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AE4B338B18FA16C2005097D3 /* MineSweeper */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B339718FA16C2005097D3 /* AppDelegate.h */,
+				AE4B339818FA16C2005097D3 /* AppDelegate.m */,
+				AE4B339A18FA16C2005097D3 /* MainMenu.xib */,
+				AE4B339D18FA16C2005097D3 /* Images.xcassets */,
+				AE4B338C18FA16C2005097D3 /* Supporting Files */,
+			);
+			path = MineSweeper;
+			sourceTree = "<group>";
+		};
+		AE4B338C18FA16C2005097D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B338D18FA16C2005097D3 /* MineSweeper-Info.plist */,
+				AE4B338E18FA16C2005097D3 /* InfoPlist.strings */,
+				AE4B339118FA16C2005097D3 /* main.m */,
+				AE4B339318FA16C2005097D3 /* MineSweeper-Prefix.pch */,
+				AE4B339418FA16C2005097D3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE4B33A918FA16C3005097D3 /* MineSweeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B33AF18FA16C3005097D3 /* MineSweeperTests.m */,
+				AE4B33AA18FA16C3005097D3 /* Supporting Files */,
+			);
+			path = MineSweeperTests;
+			sourceTree = "<group>";
+		};
+		AE4B33AA18FA16C3005097D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4B33AB18FA16C3005097D3 /* MineSweeperTests-Info.plist */,
+				AE4B33AC18FA16C3005097D3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE4B338118FA16C2005097D3 /* MineSweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4B33B318FA16C3005097D3 /* Build configuration list for PBXNativeTarget "MineSweeper" */;
+			buildPhases = (
+				AE4B337E18FA16C2005097D3 /* Sources */,
+				AE4B337F18FA16C2005097D3 /* Frameworks */,
+				AE4B338018FA16C2005097D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MineSweeper;
+			productName = MineSweeper;
+			productReference = AE4B338218FA16C2005097D3 /* MineSweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE4B33A218FA16C3005097D3 /* MineSweeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4B33B618FA16C3005097D3 /* Build configuration list for PBXNativeTarget "MineSweeperTests" */;
+			buildPhases = (
+				AE4B339F18FA16C3005097D3 /* Sources */,
+				AE4B33A018FA16C3005097D3 /* Frameworks */,
+				AE4B33A118FA16C3005097D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4B33A818FA16C3005097D3 /* PBXTargetDependency */,
+			);
+			name = MineSweeperTests;
+			productName = MineSweeperTests;
+			productReference = AE4B33A318FA16C3005097D3 /* MineSweeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4B337A18FA16C2005097D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Trever Wilhelm";
+				TargetAttributes = {
+					AE4B33A218FA16C3005097D3 = {
+						TestTargetID = AE4B338118FA16C2005097D3;
+					};
+				};
+			};
+			buildConfigurationList = AE4B337D18FA16C2005097D3 /* Build configuration list for PBXProject "MineSweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE4B337918FA16C2005097D3;
+			productRefGroup = AE4B338318FA16C2005097D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4B338118FA16C2005097D3 /* MineSweeper */,
+				AE4B33A218FA16C3005097D3 /* MineSweeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4B338018FA16C2005097D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B339018FA16C2005097D3 /* InfoPlist.strings in Resources */,
+				AE4B339E18FA16C2005097D3 /* Images.xcassets in Resources */,
+				AE4B339618FA16C2005097D3 /* Credits.rtf in Resources */,
+				AE4B339C18FA16C2005097D3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B33A118FA16C3005097D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B33AE18FA16C3005097D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4B337E18FA16C2005097D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B339918FA16C2005097D3 /* AppDelegate.m in Sources */,
+				AE4B339218FA16C2005097D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4B339F18FA16C3005097D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B33B018FA16C3005097D3 /* MineSweeperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE4B33A818FA16C3005097D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4B338118FA16C2005097D3 /* MineSweeper */;
+			targetProxy = AE4B33A718FA16C3005097D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE4B338E18FA16C2005097D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4B338F18FA16C2005097D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE4B339418FA16C2005097D3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4B339518FA16C2005097D3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AE4B339A18FA16C2005097D3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4B339B18FA16C2005097D3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AE4B33AC18FA16C3005097D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4B33AD18FA16C3005097D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE4B33B118FA16C3005097D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE4B33B218FA16C3005097D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE4B33B418FA16C3005097D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MineSweeper/MineSweeper-Prefix.pch";
+				INFOPLIST_FILE = "MineSweeper/MineSweeper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE4B33B518FA16C3005097D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MineSweeper/MineSweeper-Prefix.pch";
+				INFOPLIST_FILE = "MineSweeper/MineSweeper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AE4B33B718FA16C3005097D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MineSweeper.app/Contents/MacOS/MineSweeper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MineSweeper/MineSweeper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MineSweeperTests/MineSweeperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AE4B33B818FA16C3005097D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MineSweeper.app/Contents/MacOS/MineSweeper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MineSweeper/MineSweeper-Prefix.pch";
+				INFOPLIST_FILE = "MineSweeperTests/MineSweeperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4B337D18FA16C2005097D3 /* Build configuration list for PBXProject "MineSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B33B118FA16C3005097D3 /* Debug */,
+				AE4B33B218FA16C3005097D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4B33B318FA16C3005097D3 /* Build configuration list for PBXNativeTarget "MineSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B33B418FA16C3005097D3 /* Debug */,
+				AE4B33B518FA16C3005097D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE4B33B618FA16C3005097D3 /* Build configuration list for PBXNativeTarget "MineSweeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4B33B718FA16C3005097D3 /* Debug */,
+				AE4B33B818FA16C3005097D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4B337A18FA16C2005097D3 /* Project object */;
+}
