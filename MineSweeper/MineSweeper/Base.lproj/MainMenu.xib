@@ -1106,6 +1106,9 @@
                                 </buttonCell>
                             </column>
                         </cells>
+                        <connections>
+                            <action selector="clicked:" target="OVt-18-NPx" id="e84-HN-Z0s"/>
+                        </connections>
                     </matrix>
                     <popUpButton verticalHuggingPriority="750" id="82F-aN-b46">
                         <rect key="frame" x="18" y="333" width="117" height="26"/>
@@ -1122,6 +1125,9 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="levelSelect:" target="OVt-18-NPx" id="Wah-qC-sAo"/>
+                        </connections>
                     </popUpButton>
                     <button verticalHuggingPriority="750" id="082-i8-QJT">
                         <rect key="frame" x="140" y="338" width="76" height="19"/>
@@ -1130,6 +1136,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="controlContent"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="newGame:" target="OVt-18-NPx" id="tY9-ER-5uc"/>
+                        </connections>
                     </button>
                     <textField verticalHuggingPriority="750" id="4XE-f4-SSh">
                         <rect key="frame" x="224" y="337" width="96" height="22"/>
@@ -1150,5 +1159,11 @@
                 </subviews>
             </view>
         </window>
+        <customObject id="OVt-18-NPx" customClass="MyController">
+            <connections>
+                <outlet property="matrix" destination="0gx-uC-fL1" id="F2G-Oa-O23"/>
+                <outlet property="score" destination="4XE-f4-SSh" id="qyJ-3n-Gip"/>
+            </connections>
+        </customObject>
     </objects>
 </document>
