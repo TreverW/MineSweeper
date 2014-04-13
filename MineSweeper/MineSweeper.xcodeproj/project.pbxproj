@@ -18,6 +18,9 @@
 		AE4B33A618FA16C3005097D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B338518FA16C2005097D3 /* Cocoa.framework */; };
 		AE4B33AE18FA16C3005097D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4B33AC18FA16C3005097D3 /* InfoPlist.strings */; };
 		AE4B33B018FA16C3005097D3 /* MineSweeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33AF18FA16C3005097D3 /* MineSweeperTests.m */; };
+		AE4B33BD18FA3642005097D3 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33BA18FA3642005097D3 /* Cell.m */; };
+		AE4B33BE18FA3642005097D3 /* MineField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33BC18FA3642005097D3 /* MineField.m */; };
+		AE4B33C118FA566F005097D3 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33C018FA566F005097D3 /* MyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		AE4B33AB18FA16C3005097D3 /* MineSweeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MineSweeperTests-Info.plist"; sourceTree = "<group>"; };
 		AE4B33AD18FA16C3005097D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE4B33AF18FA16C3005097D3 /* MineSweeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineSweeperTests.m; sourceTree = "<group>"; };
+		AE4B33B918FA3642005097D3 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		AE4B33BA18FA3642005097D3 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		AE4B33BB18FA3642005097D3 /* MineField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineField.h; sourceTree = "<group>"; };
+		AE4B33BC18FA3642005097D3 /* MineField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineField.m; sourceTree = "<group>"; };
+		AE4B33BF18FA566F005097D3 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
+		AE4B33C018FA566F005097D3 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +90,9 @@
 				AE4B338418FA16C2005097D3 /* Frameworks */,
 				AE4B338318FA16C2005097D3 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		AE4B338318FA16C2005097D3 /* Products */ = {
 			isa = PBXGroup;
@@ -115,11 +126,17 @@
 		AE4B338B18FA16C2005097D3 /* MineSweeper */ = {
 			isa = PBXGroup;
 			children = (
+				AE4B33B918FA3642005097D3 /* Cell.h */,
+				AE4B33BA18FA3642005097D3 /* Cell.m */,
+				AE4B33BB18FA3642005097D3 /* MineField.h */,
+				AE4B33BC18FA3642005097D3 /* MineField.m */,
 				AE4B339718FA16C2005097D3 /* AppDelegate.h */,
 				AE4B339818FA16C2005097D3 /* AppDelegate.m */,
 				AE4B339A18FA16C2005097D3 /* MainMenu.xib */,
 				AE4B339D18FA16C2005097D3 /* Images.xcassets */,
 				AE4B338C18FA16C2005097D3 /* Supporting Files */,
+				AE4B33BF18FA566F005097D3 /* MyController.h */,
+				AE4B33C018FA566F005097D3 /* MyController.m */,
 			);
 			path = MineSweeper;
 			sourceTree = "<group>";
@@ -198,6 +215,7 @@
 		AE4B337A18FA16C2005097D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MineSweeper;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Trever Wilhelm";
 				TargetAttributes = {
@@ -254,6 +272,9 @@
 			files = (
 				AE4B339918FA16C2005097D3 /* AppDelegate.m in Sources */,
 				AE4B339218FA16C2005097D3 /* main.m in Sources */,
+				AE4B33C118FA566F005097D3 /* MyController.m in Sources */,
+				AE4B33BD18FA3642005097D3 /* Cell.m in Sources */,
+				AE4B33BE18FA3642005097D3 /* MineField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
