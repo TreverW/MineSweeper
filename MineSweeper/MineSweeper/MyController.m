@@ -11,10 +11,10 @@
 @implementation MyController
 
 - (IBAction)clicked:(id)sender {
-  int r = [sender selectedRow];
-  int c = [sender selectedColumn];
+  NSInteger r = [sender selectedRow];
+  NSInteger c = [sender selectedColumn];
   NSButtonCell *bcell = [sender selectedCell];
-  NSLog(@"clicked: sender=%@, selected cell=%@ at row=%d, col=%d", sender, bcell, r, c);
+  NSLog(@"clicked: sender=%@, selected cell=%@ at row=%ld, col=%ld", sender, bcell, (long)r, (long)c);
 }
 
 - (IBAction)newGame:(id)sender {
@@ -22,7 +22,7 @@
 }
 
 - (IBAction)levelSelect:(id)sender {
-  int index = [sender indexOfSelectedItem];
-  NSLog(@"levelSelected:sender=%@, index=%d", sender, index);
+  NSInteger index = [sender indexOfSelectedItem];
+  NSLog(@"levelSelected:sender=%@, index=%ld", sender, (long)index);
 }
 @end
