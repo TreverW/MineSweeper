@@ -686,7 +686,7 @@
                         </buttonCell>
                         <cells>
                             <column>
-                                <buttonCell type="square" title="8" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FPA-p3-yWb">
+                                <buttonCell type="square" title="8" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FPA-p3-yWb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system" size="19"/>
                                 </buttonCell>

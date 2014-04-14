@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MineField.h"
 
 @interface MyController : NSObject {
     IBOutlet NSTextField *score;
     IBOutlet NSMatrix *matrix;
+    MineField *minefield;
+    NSImage *bombImage;
+    NSImage *flagImage;
 }
 - (IBAction)clicked:(id)sender;
 - (IBAction)newGame:(id)sender;
