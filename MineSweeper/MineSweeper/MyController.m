@@ -47,5 +47,6 @@
   bombImage = [NSImage imageNamed:@"Bomb"];
   flagImage = [NSImage imageNamed:@"Flag"];
   minefield = [[MineField alloc] initWithWidth:10 Height:10 Mines:10];
+  [minefield reset];
 }
 @end
