@@ -19,5 +19,5 @@
 - (IBAction)clicked:(id)sender;
 - (IBAction)newGame:(id)sender;
 - (IBAction)levelSelect:(id)sender;
-
+- (void)rightClicked:(id)sender;
 @end

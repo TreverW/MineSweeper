@@ -43,6 +43,12 @@
   NSLog(@"levelSelected:sender=%@, index=%ld", sender, (long)index);
 }
 
+- (void)rightClicked:(id)sender {
+  int r = [sender selectedRow];
+  int c = [sender selectedColumn];
+  // mark or unmark mine
+}
+
 -(void)awakeFromNib {
   bombImage = [NSImage imageNamed:@"Bomb"];
   flagImage = [NSImage imageNamed:@"Flag"];

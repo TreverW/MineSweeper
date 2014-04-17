@@ -21,6 +21,7 @@
 		AE4B33BD18FA3642005097D3 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33BA18FA3642005097D3 /* Cell.m */; };
 		AE4B33BE18FA3642005097D3 /* MineField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33BC18FA3642005097D3 /* MineField.m */; };
 		AE4B33C118FA566F005097D3 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33C018FA566F005097D3 /* MyController.m */; };
+		AEB0824018FFBA9600E776BF /* MyMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB0823F18FFBA9600E776BF /* MyMatrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		AE4B33BC18FA3642005097D3 /* MineField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineField.m; sourceTree = "<group>"; };
 		AE4B33BF18FA566F005097D3 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		AE4B33C018FA566F005097D3 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
+		AEB0823E18FFBA9600E776BF /* MyMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMatrix.h; sourceTree = "<group>"; };
+		AEB0823F18FFBA9600E776BF /* MyMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMatrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				AE4B338C18FA16C2005097D3 /* Supporting Files */,
 				AE4B33BF18FA566F005097D3 /* MyController.h */,
 				AE4B33C018FA566F005097D3 /* MyController.m */,
+				AEB0823E18FFBA9600E776BF /* MyMatrix.h */,
+				AEB0823F18FFBA9600E776BF /* MyMatrix.m */,
 			);
 			path = MineSweeper;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				AE4B339918FA16C2005097D3 /* AppDelegate.m in Sources */,
 				AE4B339218FA16C2005097D3 /* main.m in Sources */,
 				AE4B33C118FA566F005097D3 /* MyController.m in Sources */,
+				AEB0824018FFBA9600E776BF /* MyMatrix.m in Sources */,
 				AE4B33BD18FA3642005097D3 /* Cell.m in Sources */,
 				AE4B33BE18FA3642005097D3 /* MineField.m in Sources */,
 			);
@@ -487,6 +493,7 @@
 				AE4B33B518FA16C3005097D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE4B33B618FA16C3005097D3 /* Build configuration list for PBXNativeTarget "MineSweeperTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +502,7 @@
 				AE4B33B818FA16C3005097D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
