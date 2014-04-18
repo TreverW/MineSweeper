@@ -20,4 +20,6 @@
 - (IBAction)newGame:(id)sender;
 - (IBAction)levelSelect:(id)sender;
 - (void)rightClicked:(id)sender;
+- (void)detonate;
+- (void)clearCell:(NSButtonCell*)bcell;
 @end
