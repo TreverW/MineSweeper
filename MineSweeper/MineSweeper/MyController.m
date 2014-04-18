@@ -37,6 +37,7 @@
     [bcell setEnabled:NO];
   } else {
     // No mines in vicinity, expose multiple
+    [self revealExposedCells];
   }
 }
 
@@ -79,7 +80,7 @@
   [matrix deselectSelectedCell];
 }
 
--(void) detonate {
+-(void)detonate {
   NSButtonCell *bcell;
   Cell *cell;
 
@@ -92,6 +93,28 @@
         [bcell setImage:bombImage];           // Draw the bomb
       }
       [bcell setEnabled:NO];                  // Disable the button
+    }
+  }
+}
+
+-(void)revealExposedCells {
+  NSButtonCell *bcell;
+  Cell *cell;
+  // iterate over every cell
+  for (int r = 0; r < minefield.height; r++) {
+    for (int c = 0; c < minefield.width; c++) {
+      bcell = [matrix cellAtRow:r column:c];  // Get the button cell
+      cell = [minefield cellAtRow:r Col:c];   // Get the minefield cell
+      if ([cell exposed] && [bcell isEnabled] && !cell.marked) {
+        [matrix setState:NSOnState atRow:r column:c];            // Set it as selected
+        NSLog(@"numSurroundingMines: %d", [cell numSurroundingMines]);
+        [bcell setImage: nil];
+        [bcell setType: NSTextCellType];
+        if ([cell numSurroundingMines] > 0) {
+          [bcell setTitle:[NSString stringWithFormat:@"%d",[cell numSurroundingMines]]];
+        }
+        [bcell setEnabled:NO];
+      }
     }
   }
 }

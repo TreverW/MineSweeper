@@ -21,5 +21,6 @@
 - (IBAction)levelSelect:(id)sender;
 - (void)rightClicked:(id)sender;
 - (void)detonate;
+- (void)revealExposedCells;
 - (void)clearCell:(NSButtonCell*)bcell;
 @end
