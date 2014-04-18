@@ -35,9 +35,11 @@
     [bcell setType: NSTextCellType];
     [bcell setTitle:[NSString stringWithFormat:@"%d", result]];
     [bcell setEnabled:NO];
+    [self updateScore];
   } else {
     // No mines in vicinity, expose multiple
     [self revealExposedCells];
+    [self updateScore];
   }
 }
 
@@ -123,6 +125,17 @@
   [bcell setImage: nil];
   [bcell setType: NSTextCellType];
   [bcell setTitle: @""];
+}
+
+-(void)updateScore {
+  // Calculate how many more empty cells are left to expose
+  int numLeft = minefield.width * minefield.height - minefield.numExposedCells - minefield.numMines;
+  if (numLeft == 0) {
+    [self detonate];
+    [score setStringValue:@"WINNER!"];
+  } else {
+    [score setStringValue:[NSString stringWithFormat:@"%d left", numLeft]];
+  }
 }
 
 -(void)awakeFromNib {

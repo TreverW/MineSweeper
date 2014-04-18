@@ -23,4 +23,5 @@
 - (void)detonate;
 - (void)revealExposedCells;
 - (void)clearCell:(NSButtonCell*)bcell;
+- (void)updateScore;
 @end
