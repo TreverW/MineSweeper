@@ -41,7 +41,6 @@
 }
 
 - (IBAction)newGame:(id)sender {
-  NSLog(@"newGame");
   // Reset the minefield
   [minefield reset];
   // Reset the board buttons
@@ -54,6 +53,8 @@
     }
   }
   [matrix deselectAllCells];
+  // set the Score text
+  [score setStringValue:@"Begin!"];
 }
 
 - (IBAction)levelSelect:(id)sender {
