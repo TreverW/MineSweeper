@@ -5,6 +5,9 @@
 //  Created by Trever Wilhelm on 4/12/14.
 //  Copyright (c) 2014 Trever Wilhelm. All rights reserved.
 //
+//  I figured out how to keep the state set to ON if a cell is flagged but
+//  still allow for the flag to be unset using the right mouse button.
+//
 
 #import "MyController.h"
 
@@ -17,9 +20,13 @@
   NSButtonCell *bcell = [sender selectedCell];
   Cell *cell = [minefield cellAtRow:r Col:c];
   
-  NSLog(@"clicked: sender=%@, selected cell=%@ at row=%ld, col=%ld", sender, bcell, (long)r, (long)c);
+  //NSLog(@"clicked: sender=%@, selected cell=%@ at row=%ld, col=%ld", sender, bcell, (long)r, (long)c);
   
-  if (!cell.marked) {
+  if (cell.marked) {
+    // keep the button state as selected:
+    [matrix setState:NSOnState atRow:r column:c];
+    return; // skip this logic if the cell is marked with a flag.  
+  } else {
     result = [minefield exposeCellAtRow:r Col:c];
   }
   
@@ -62,7 +69,7 @@
 
 - (IBAction)levelSelect:(id)sender {
   NSInteger index = [sender indexOfSelectedItem];
-  NSLog(@"levelSelected:sender=%@, index=%ld", sender, (long)index);
+  //NSLog(@"levelSelected:sender=%@, index=%ld", sender, (long)index);
 }
 
 - (void)rightClicked:(id)sender {
@@ -78,8 +85,9 @@
     [bcell setImage:flagImage];
   } else {
     [self clearCell:bcell];
+    [matrix deselectSelectedCell];
   }
-  [matrix deselectSelectedCell];
+  //[matrix deselectSelectedCell];
 }
 
 -(void)detonate {
@@ -143,5 +151,6 @@
   flagImage = [NSImage imageNamed:@"Flag"];
   minefield = [[MineField alloc] initWithWidth:10 Height:10 Mines:10];
   [minefield reset];
+  [score setStringValue:@"Begin!"];
 }
 @end
