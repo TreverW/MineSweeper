@@ -128,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         <size key="cellSize" width="30" height="30"/>
-                        <buttonCell key="prototype" type="square" title="8" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LTt-cR-RLw">
+                        <buttonCell key="prototype" type="square" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LTt-cR-RLw">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                             <font key="font" metaFont="system" size="19"/>
                         </buttonCell>
@@ -611,6 +611,7 @@
             <connections>
                 <outlet property="matrix" destination="0gx-uC-fL1" id="F2G-Oa-O23"/>
                 <outlet property="score" destination="4XE-f4-SSh" id="qyJ-3n-Gip"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="JTb-Um-vfh"/>
             </connections>
         </customObject>
     </objects>
