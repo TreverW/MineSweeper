@@ -69,6 +69,40 @@
 
 - (IBAction)levelSelect:(id)sender {
   NSInteger index = [sender indexOfSelectedItem];
+  
+  // I didn't see anything specified in the assignment about how the levels of difficulty are defined so I'll make up some of my own.
+  // according to the Mineswpper wiki (http://www.minesweeper.info/wiki/Windows_Minesweeper)
+  // there are 10 mines at beginner level, 40 at intermediate
+  // and 99 at expert.  I assume that this is with a constant 10x10 grid however I will change the grid
+  // size to exercise the frame resize code.
+  // I also found this at: http://windows.microsoft.com/en-us/windows/minesweeper-how-to#1TC=windows-7
+  // Beginner: 81 tiles, 10 mines
+  // Intermediate: 256 tiles, 40 mines
+  // Expert: 480 tiles, 99 mines
+  
+  switch (index) {
+    case 0:
+      // beginner
+      minefield = [minefield initWithWidth:10 Height:10 Mines:10];
+      [matrix renewRows:10 columns:10];
+      break;
+    case 1:
+      minefield = [minefield initWithWidth:16 Height:16 Mines:40];
+      [matrix renewRows:16 columns:16];
+      break;
+    case 2:
+      minefield = [minefield initWithWidth:22 Height:22 Mines:99];
+      [matrix renewRows:22 columns:22];
+      break;
+    case 3:
+      minefield = [minefield initWithWidth:30 Height:30 Mines:500];
+      [matrix renewRows:30 columns:30];
+    default:
+      break;
+  }
+  [matrix sizeToCells];
+  [self resizeWindow];
+  [self newGame:self];
   //NSLog(@"levelSelected:sender=%@, index=%ld", sender, (long)index);
 }
 
@@ -77,7 +111,6 @@
   int c = [sender selectedColumn];
   NSButtonCell *bcell = [sender selectedCell];
   Cell *cell = [minefield cellAtRow:r Col:c];
-  // mark or unmark mine
 
   // Toggle the cell value
   cell.marked = !cell.marked;
@@ -87,7 +120,6 @@
     [self clearCell:bcell];
     [matrix deselectSelectedCell];
   }
-  //[matrix deselectSelectedCell];
 }
 
 -(void)detonate {
@@ -146,11 +178,27 @@
   }
 }
 
+-(void)resizeWindow {
+  NSRect f = [matrix frame];
+  float dx = f.size.width - matrixFrame.size.width;
+  float dy = f.size.height - matrixFrame.size.height;
+  NSRect newFrame;
+  newFrame.origin.x = [window frame].origin.x;
+  newFrame.origin.y = [window frame].origin.y - dy/2;
+  newFrame.size.width = [window frame].size.width + dx;
+  newFrame.size.height = [window frame].size.height + dy;
+  [window setFrame:newFrame display:YES animate:NO];
+  matrixFrame = f;
+}
+
 -(void)awakeFromNib {
   bombImage = [NSImage imageNamed:@"Bomb"];
   flagImage = [NSImage imageNamed:@"Flag"];
   minefield = [[MineField alloc] initWithWidth:10 Height:10 Mines:10];
   [minefield reset];
   [score setStringValue:@"Begin!"];
+  
+  // store the Matrix frame size in case of a re-size
+  matrixFrame = [matrix frame];
 }
 @end

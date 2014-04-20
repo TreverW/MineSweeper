@@ -12,7 +12,9 @@
 @interface MyController : NSObject {
     IBOutlet NSTextField *score;
     IBOutlet NSMatrix *matrix;
+    IBOutlet NSWindow *window;
     MineField *minefield;
+    NSRect matrixFrame;
     NSImage *bombImage;
     NSImage *flagImage;
 }
@@ -24,4 +26,6 @@
 - (void)revealExposedCells;
 - (void)clearCell:(NSButtonCell*)bcell;
 - (void)updateScore;
+- (void)resizeWindow;
+
 @end
