@@ -14,8 +14,8 @@
 @implementation MyController
 
 - (IBAction)clicked:(id)sender {
-  int r = [sender selectedRow];
-  int c = [sender selectedColumn];
+  int r = (int)[sender selectedRow];
+  int c = (int)[sender selectedColumn];
   int result;
   NSButtonCell *bcell = [sender selectedCell];
   Cell *cell = [minefield cellAtRow:r Col:c];
@@ -107,8 +107,8 @@
 }
 
 - (void)rightClicked:(id)sender {
-  int r = [sender selectedRow];
-  int c = [sender selectedColumn];
+  int r = (int)[sender selectedRow];
+  int c = (int)[sender selectedColumn];
   NSButtonCell *bcell = [sender selectedCell];
   Cell *cell = [minefield cellAtRow:r Col:c];
 
