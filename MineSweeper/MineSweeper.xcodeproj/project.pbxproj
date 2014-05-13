@@ -22,6 +22,7 @@
 		AE4B33BE18FA3642005097D3 /* MineField.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33BC18FA3642005097D3 /* MineField.m */; };
 		AE4B33C118FA566F005097D3 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B33C018FA566F005097D3 /* MyController.m */; };
 		AEB0824018FFBA9600E776BF /* MyMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB0823F18FFBA9600E776BF /* MyMatrix.m */; };
+		AEC7F25F1904DE5F00AF1231 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AEC7F25E1904DE5F00AF1231 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		AE4B33C018FA566F005097D3 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
 		AEB0823E18FFBA9600E776BF /* MyMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMatrix.h; sourceTree = "<group>"; };
 		AEB0823F18FFBA9600E776BF /* MyMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMatrix.m; sourceTree = "<group>"; };
+		AEC7F25E1904DE5F00AF1231 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		AE4B337918FA16C2005097D3 = {
 			isa = PBXGroup;
 			children = (
+				AEC7F25E1904DE5F00AF1231 /* README.md */,
 				AE4B338B18FA16C2005097D3 /* MineSweeper */,
 				AE4B33A918FA16C3005097D3 /* MineSweeperTests */,
 				AE4B338418FA16C2005097D3 /* Frameworks */,
@@ -255,6 +258,7 @@
 			files = (
 				AE4B339018FA16C2005097D3 /* InfoPlist.strings in Resources */,
 				AE4B339E18FA16C2005097D3 /* Images.xcassets in Resources */,
+				AEC7F25F1904DE5F00AF1231 /* README.md in Resources */,
 				AE4B339618FA16C2005097D3 /* Credits.rtf in Resources */,
 				AE4B339C18FA16C2005097D3 /* MainMenu.xib in Resources */,
 			);
